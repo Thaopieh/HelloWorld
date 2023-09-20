@@ -1,0 +1,64 @@
+/* GLOBAl */
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.clear{
+    clear: both;
+}
+/* /* HEADER  */
+
+.header__logoImg{
+    float: left;
+}
+
+.header__slogan{
+    float: right;
+    margin-right: 20px;
+}
+
+
+.header__navbar {
+   
+}
+
+.header__navbar ul{
+    list-style: none;
+    border-top: 1px solid #E8E8E8;
+    border-bottom: 1px solid #E8E8E8;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.header__navbar li{
+    display: inline;
+
+    
+}
+
+.header__navbar a{
+    text-decoration: none;
+    font-weight: bold;
+    /* vw,vh  */
+    font-size: 1.13vw;
+    /*1 em = giá trị font size */
+    padding: 0 0.3em;
+    color: #636363;
+    /* text-transform: uppercase; */
+   
+
+
+}
+
+.header__navbar li:hover{
+    border-bottom: 2px solid #B31C25;
+}
+
+.header__navbar ul .active{
+    border-bottom: 2px solid #B31C25;
+}
