@@ -1,0 +1,201 @@
+/* FLOBAL */
+*{
+    box-sizing: border-box;
+    /* Tránh trường hợp trên 1 hàng không đủ không gian */
+    /* dùng cho padding tự động thay đổi kích thước nội dung gốc để lấy không gian giữ khoảng cách */
+}
+html, body
+{
+    font-family: 'Times New Roman', Times, serif;
+}
+/* header */
+/* img
+{
+    width: 250px;
+} */
+.clear
+{
+    clear: both;
+}
+.header img{
+    width: 250px;
+}
+.header ul{
+    margin: 5px 0 10px;
+    padding: 15px 0;
+    background-color: black;
+    list-style: none;
+}
+.header li
+{
+    display:inline;
+    margin:0px 10px;
+    /* margin nằm bên ngoài boder và là khoảng cách giữa các thẻ */
+    /* padding là khoảng cách giữa nội dung so với viền của thẻ */
+    
+}
+.header a{
+    text-decoration: none;
+    color: white;
+}
+/* tăng độ cao của navigation bar cao lên bằng cách tăng độ dày của padding làm cho khí thay đổi kích thước chữ thì nó nhờ padding là khoảng cách của nội dung với viền thì độ dài sẽ được tăng */
+/* slider */
+.slider{
+    background-image: url(../img/slider_1.jpg);
+    height: 550px; 
+    /* khi có ảnh nhưng không thấy vì nó chưa set chiều cao nên ta cần phải set lại chiều cao */
+    background-size: cover;
+    /* chiều rồng của back ground chưa phủ hết 100% nê dùng để phủ hết */
+    background-repeat: no-repeat;
+    /* tránh trường hợp lặp lại ảnh */
+    background-position: center;
+    /* canh hình ở giữ theo chiều dọc và chiều ngang */
+}
+/* Products */
+.product{
+    margin-bottom: 70px;
+}
+.product__item
+{
+    /* kĩ thuật float đưa các div lên cùng 1 hàng */
+    float:left;
+    width: 25%;
+    padding: 0 10px;
+
+}
+.product__item img
+{
+    width: 100%;
+    /* vì ảnh quá lớn nên chiếm thêm không gian nên kích thước ảnh phải bằng 100% kích thước thẻ cha */
+}
+.product h2
+{
+    text-align: center;
+    font-size: 30px;
+}
+.product__item h3{
+    font-size: 20px;
+}
+.product__item p{
+    font-size:17px;
+}
+.product__item button
+{
+    background-color: red;
+    border: 1px solid red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-top: 15px;
+}
+/* intro */
+.intro__test span
+{
+    color: red;
+    font-weight: bold;
+}
+.intro__test
+{
+    font-size: 20px;
+    margin: 40px 0px 40px;
+}
+.intro__left, .intro__right
+{
+    float:left;
+    width: 50%;
+}
+.intro__item1
+{
+    float: left;
+    width: 50%;
+}
+.intro__item img
+{
+    display: block;
+    width: 100%;
+}
+.intro__item
+{
+    padding: 0 15px 30px;
+}
+/* BANNER */
+.banner
+{
+    background-image: url(../img/nature.jpg);
+    height: 400px;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    position: relative;
+}
+.banner__circle
+{
+    width: 300px;
+    height: 300px;
+    background-color: rgba(131, 41, 39, 0.805);
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    position: absolute;
+    top: 15px;
+    left: 300px;
+    /* opacity: 0.8; làm mờ thẻ con và nội dung*/
+}
+.banner__circle p
+{
+    font-size: 20px;
+    margin: 0 0 20px;
+}
+.banner__circle p:first-child{
+    font-size: 30px;
+    margin: 50px 0 0;
+}
+.banner__circle p:nth-child(2)
+{
+    font-size: 80px;
+    margin: 0;
+}
+/* Phần services */
+.service{
+    margin: 30px 0 10px;
+}
+
+.services__content
+{
+    width: 70%;
+    text-align: center;
+    margin:auto;
+}
+.services__item
+{
+    float: left;
+    width: 33.33%;
+    padding: 0 10px;
+}
+.services__item i
+{
+    font-size: 40px;
+}
+.services__item h2
+{
+    margin:10px 0;
+}
+.services__item p
+{
+    margin: 0;
+}
+/* footer */
+.footer
+{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0 10px;
+}
+.footer p,.footer h2
+{
+    margin: 0;
+}
+.footer h2
+{
+    font-size: 40px;
+}

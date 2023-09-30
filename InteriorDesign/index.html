@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior Design</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <!-- Phần chính đầu tiên là header Header gồm logo và phần navigation bar(menu) -->
+    <!-- Phần slider có 2 loại tĩnh và động (giống như mấy cái banner quảng cáo) -->
+    <!-- Phần intro giới thiệu -->
+    <!-- Phần product để hiển thị các sản phẩm -->
+    <!-- Phần banner khuyến mãi -->
+    <!-- Phần service của công ty -->
+    <!-- Phần chính thứ 2 là footer( cuối cùng của trang) -->
+
+    <!-- Phần code -->
+    <!-- Header -->
+    <div class="header">
+        <img src="./img/LOGO.png" alt="Logo">
+        <ul>
+            <li><a href="#">TRANG CHỦ</a></li>
+            <li><a href="#">GIỚI THIỆU</a></li>
+            <li><a href="#">SẢN PHẨM</a></li>
+            <li><a href="#">TIN TỨC</a></li>
+            <li><a href="#">LIÊN HỆ</a></li>
+        </ul>
+        <!-- chưa có trang con thì dùng dấu thăng để khi kích luôn về trang home -->
+    </div>
+    <!-- slider -->
+    <div class="slider"></div>
+    <!-- intro -->
+    <div class="intro">
+        <p class="intro__test">Tại <span>KLK PHÚC THỊNH</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dicta numquam, obcaecati eligendi illo esse? Libero saepe perferendis facilis dolorum at, dignissimos sed doloremque quas, quaerat aperiam id officiis? Fugiat praesentium ut quis libero dignissimos iste nam et ad quos odit ullam odio mollitia eaque asperiores, maiores placeat voluptates impedit pariatur delectus eos laboriosam aperiam! Quibusdam, dicta amet. Adipisci, veritatis numquam corporis dolor deserunt voluptate placeat, saepe, ipsam soluta quis sapiente rerum molestiae esse quisquam hic harum autem reprehenderit neque? Itaque optio, vero, iste sapiente omnis repellat fugiat inventore facilis quis dolorem possimus tempora sequi autem in nam exercitationem harum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, impedit? Commodi placeat hic natus aliquid vero rerum officia nam perferendis labore, necessitatibus qui molestiae cumque architecto accusantium quaerat dicta alias nisi. Sit cum eius ratione molestias earum dicta a quae modi doloremque, perspiciatis consectetur odio minus facere architecto temporibus cumque!</p>
+        <div class="intro__content">
+            <div class="intro__left">
+                <div class="intro__item intro__item1">
+                    <img src="./img/img_nha_tam.jpg" alt="nha tam">
+                </div>
+                <div class="intro__item intro__item1">
+                    <img src="./img/img_sofa.jpg" alt="Sofa">
+                </div>
+                <div class="intro__item">
+                    <img src="./img/img_noi_that.jpg" alt="Noi that">
+                </div>
+                
+            </div>
+            <div class="intro__right">
+                <div class="intro__item">
+                    <img src="./img/img_phong_khach.jpg" alt="Phong Khach">
+                </div>
+                <div class="intro__item">
+                    <img src="./img/img_van_phong.jpg" alt="">
+                </div>
+                
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!-- product -->
+    <div class="product">
+        <h2>CÁC SẢN PHẨM BÁN CHẠY</h2>
+        <!-- BEM dùng class cha cho thẻ con và thêm __ -->
+        <div class="product__content">
+            <div class="product__item">
+                <img src="./img/sp_1.jpg" alt="SP001">
+                <h3>SP001</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis nemo, consequuntur hic quis totam dignissimos praesentium eius non quasi tenetur!</p>
+               <button>Chi Tiết</button>
+            </div>
+            <div class="product__item">
+                <img src="./img/sp_2.jpg" alt="SP002">
+                <h3>SP002</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quidem blanditiis hic voluptates, natus eum temporibus voluptas ex modi odio.</p>
+                <button>Chi Tiết</button>
+            </div>
+            <div class="product__item">
+                <img src="./img/sp_3.jpg" alt="SP003">
+                <h3>SP003</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore debitis inventore blanditiis culpa quidem nisi dignissimos rerum nam porro tempora.</p>
+                <button>Chi Tiết</button>
+            </div>
+            <div class="product__item"><img src="./img/sp_4.jpg" alt="SP004">
+            <h3>SP004</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum quidem doloremque necessitatibus quae tenetur natus commodi ad nihil minus sint.</p>
+        <button>Chi Tiết</button>
+
+    </div>
+        </div>
+        <div class="clear"></div>
+        <!-- xóa hiệu ứng float -->
+    </div>
+    <!-- banner -->
+    <div class="banner">
+        <div class="banner__circle">
+            <p>SALE OFF</p>
+            <p>50%</p>
+            <p>Các sản phẩm sofa</p>
+            <p>Tháng 7</p>
+        </div>
+    </div>
+    <!-- service -->
+    <div class="service">
+        <div class="services__content">
+            <div class="services__item">
+                <i class="fa fa-home"></i>
+                <h2>Dịch vụ bảo hành</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, magnam enim doloribus placeat ad voluptates?</p>
+            </div>
+            <div class="services__item">
+                <i class="fa fa-pencil-alt"></i>
+                <h2>Thiết kế nội thất</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In placeat hic molestiae, repellat reiciendis ab?</p>
+            </div>
+            <div class="services__item">
+                <i class="fa fa-user"></i>
+                <h2>Đội ngũ nhân lực</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quibusdam quidem et eveniet eligendi quam?</p>
+
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!-- footer  -->
+    <div class="footer">
+        <h2>Interior Design</h2>
+        <p>Địa chỉ: 459 Sư Vạn Hạnh, Quận 10, TP Hồ Chí Minh</p>
+        <p>Điện thoại:(84)96.105.2034</p>
+        <p>Điện thoại di động:(84)35.621.0749</p>
+    </div>
+</body>
+</html>
